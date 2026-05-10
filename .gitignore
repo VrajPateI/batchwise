@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Build Artifacts
+dist/
+build/
+.next/
+
+# Secrets (CRITICAL)
+.env
+.env.local
+.env.*.local
+*.pem
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
