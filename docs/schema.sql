@@ -218,18 +218,7 @@
       LIMIT 10
     ) t;
 
-    -- TRIGGERS
 
--- Auto-update timestamps
-CREATE TRIGGER tr_update_app_settings_timestamp
-  BEFORE UPDATE ON public.app_settings
-  FOR EACH ROW EXECUTE FUNCTION public.handle_updated_at();
-
--- Auto-sync batches to subjects
-CREATE TRIGGER tr_sync_students_batch
-  AFTER INSERT OR UPDATE OF batch_name ON public.students
-  FOR EACH ROW EXECUTE FUNCTION public.sync_batch_to_subjects();
-    
     -- 5. Get All Exam Marks (For Chart - Ascending)
     SELECT json_agg(t) INTO v_all_marks_data
     FROM (
@@ -550,6 +539,18 @@ CREATE TRIGGER tr_sync_students_batch
   END;
   $function$;
 
+
+  -- TRIGGERS
+
+  -- Auto-update timestamps
+  CREATE TRIGGER tr_update_app_settings_timestamp
+    BEFORE UPDATE ON public.app_settings
+    FOR EACH ROW EXECUTE FUNCTION public.handle_updated_at();
+
+  -- Auto-sync batches to subjects
+  CREATE TRIGGER tr_sync_students_batch
+    AFTER INSERT OR UPDATE OF batch_name ON public.students
+    FOR EACH ROW EXECUTE FUNCTION public.sync_batch_to_subjects();
 
 -- ENABLE ROW LEVEL SECURITY
   ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
