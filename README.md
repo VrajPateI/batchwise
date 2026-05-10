@@ -4,6 +4,10 @@ A comprehensive, multi-tenant SaaS application designed to help tuition centers 
 
 This project is divided into a React/Vite frontend and a Python backend. It uses Supabase as the database and authentication provider, featuring strict Row Level Security (RLS) for tenant isolation.
 
+## 🌐 Live Preview
+- **Website URL:** [https://tuition-app-7io.pages.dev/login](https://tuition-app-7io.pages.dev/login)
+- **Test Email:** `test123@gmail.com`
+- **Test Password:** `12345678`
 ---
 
 ## 🚀 Quick Start Guide
