@@ -31,3 +31,6 @@ Thumbs.db
 # AI Assistants
 .agent/
 .cursor/
+
+# Supabase Local
+supabase/.temp/
