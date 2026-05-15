@@ -5,7 +5,6 @@ import AdminDashboard from './pages/AdminDashboard';
 import AddStudent from './pages/AddStudent';
 import StudentList from './pages/StudentList';
 import StudentPortal from './pages/StudentPortal';
-import AboutPage from './pages/AboutPage';
 import HelpPage from './pages/HelpPage';
 import SettingsPage from './pages/SettingsPage';
 import FeeManager from './pages/FeeManager';
@@ -25,7 +24,6 @@ function App() {
       <Toaster position="top-center" richColors />
       <Routes>
         {/* --- Public Access --- */}
-        <Route path="/about" element={<AboutPage />} />
         <Route path="/help" element={<HelpPage />} />
 
         {/* Public Route: Login */}
