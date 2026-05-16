@@ -177,31 +177,25 @@ export default function LoginPage() {
                         {/* Modal Body */}
                         <div className="p-6 space-y-4">
                             <p className="text-sm text-slate-500 mb-4 leading-relaxed">
-                                Use the following credentials to log in and explore the system's administrative features.
+                                We are available 24/7.
                             </p>
 
                             {/* Test Credentials */}
                             <div className="space-y-3">
                                 <div className="p-4 rounded-xl bg-indigo-50 border border-indigo-100">
-                                    <p className="text-xs text-indigo-400 font-bold uppercase mb-2">Test Credentials</p>
+                                    <p className="text-xs text-indigo-400 font-bold uppercase mb-2">Developer</p>
                                     <div className="space-y-2">
                                         <div className="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-100">
                                             <span className="text-xs font-medium text-slate-500">Email:</span>
-                                            <span className="text-sm font-bold text-slate-800">test123@gmail.com</span>
-                                        </div>
-                                        <div className="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-100">
-                                            <span className="text-xs font-medium text-slate-500">Pass:</span>
-                                            <span className="text-sm font-bold text-slate-800">12345678</span>
+                                            <span className="text-sm font-bold text-slate-800">vraj175patel@gmail.com</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-[10px] text-center text-slate-400 italic">
-                                    Use these credentials to explore the admin dashboard.
-                                </p>
+
                             </div>
 
                             <div className="pt-2 flex items-center justify-center gap-1.5 text-xs text-slate-400">
-                                <span>Demo Environment</span>
+                                <span>Thanks for using</span>
                             </div>
                         </div>
                     </div>
